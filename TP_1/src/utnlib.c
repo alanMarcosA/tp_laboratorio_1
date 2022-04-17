@@ -47,17 +47,17 @@ void realizarOperaciones(int* km, float* precioA, float* precioL, float* precioD
 
 void mostrarResultados(float* precioDebitoA, float* precioDebitoL, float* precioCreditoA,float* precioCreditoL, float* precioBitA, float* precioBitL, float* precioUniA, float* precioUniL, float* difPrecio){
 	printf("Latam \n");
-	printf("a) Precio con tarjeta de débito: %.2f \n",*precioDebitoL);
-	printf("b) Precio con tarjeta de crédito: %.2f \n", *precioCreditoL);
-	printf("c) Precio pagando con bitcoin : %f \n", *precioBitL);
-	printf("d) Precio unitario: %.2f \n", *precioUniL);
+	printf("a) Precio con tarjeta de débito: $%.2f \n",*precioDebitoL);
+	printf("b) Precio con tarjeta de crédito: $%.2f \n", *precioCreditoL);
+	printf("c) Precio pagando con bitcoin : %f BTC\n", *precioBitL);
+	printf("d) Precio unitario: $%.2f \n", *precioUniL);
 
 	printf("Aerolineas \n");
-	printf("a) Precio con tarjeta de débito: %.2f \n",*precioDebitoA);
-	printf("b) Precio con tarjeta de crédito: %.2f \n", *precioCreditoA);
-	printf("c) Precio pagando con bitcoin : %f \n", *precioBitA);
-	printf("d) Precio unitario: %.2f \n", *precioUniA);
-	printf("La diferencia de precio es : %.2f \n", *difPrecio);
+	printf("a) Precio con tarjeta de débito: $%.2f \n",*precioDebitoA);
+	printf("b) Precio con tarjeta de crédito: $%.2f \n", *precioCreditoA);
+	printf("c) Precio pagando con bitcoin : %f BTC\n", *precioBitA);
+	printf("d) Precio unitario: $%.2f \n", *precioUniA);
+	printf("La diferencia de precio es : $%.2f \n", *difPrecio);
 }
 
 void cargaDeDatosForzada(int* km, float* precioA, float* precioL, float* precioDebitoA, float* precioDebitoL, float* precioCreditoA,float* precioCreditoL, float* precioBitA, float* precioBitL, float* precioUniA, float* precioUniL, float* difPrecio){
@@ -67,17 +67,17 @@ void cargaDeDatosForzada(int* km, float* precioA, float* precioL, float* precioD
 	realizarOperaciones(km, precioA, precioL, precioDebitoA, precioDebitoL, precioCreditoA, precioCreditoL, precioBitA, precioBitL, precioUniA, precioUniL, difPrecio);
 	printf("\n KMs Ingresados: %d km \n",*km);
 
-	printf("\n Precio Aerolineas: $%d \n",*precioA);
+	printf("\n Precio Aerolineas: $%.2f \n",*precioA);
 	printf("a) Precio con tarjeta de débito: $ %.2f \n",*precioDebitoA);
 	printf("b) Precio con tarjeta de crédito: $ %.2f \n", *precioCreditoA);
-	printf("c) Precio pagando con bitcoin : %.2f BTC \n", *precioBitA);
+	printf("c) Precio pagando con bitcoin : %f BTC \n", *precioBitA);
 	printf("d) Mostrar precio unitario: $ %.2f \n", *precioUniA);
 
 
-	printf("\n Precio Latam: $%d \n",*precioL);
+	printf("\n Precio Latam: $%.2f \n",*precioL);
 	printf("a) Precio con tarjeta de débito: %.2f \n",*precioDebitoL);
 	printf("b) Precio con tarjeta de crédito: %.2f \n", *precioCreditoL);
-	printf("c) Precio pagando con bitcoin : %.2f \n", *precioBitL);
+	printf("c) Precio pagando con bitcoin : %f BTC \n", *precioBitL);
 	printf("d) Mostrar precio unitario: %.2f \n", *precioUniL);
 
 	printf("\n La diferencia de precio es : $ %.2f \n", *difPrecio);

@@ -82,6 +82,7 @@ int main(void) {
 				case 5:
 					cargaDeDatosForzada(&km, &precioAerolineas, &precioLatam, &precioDebitoA, &precioDebitoL, &precioCreditoA, &precioCreditoL, &precioBitA, &precioBitL, &precioUniA, &precioUniL, &difPrecio);
 					flagMostrar=1;
+					flagPrecio=1;
 					flagKm=1;
 					break;
 			}
