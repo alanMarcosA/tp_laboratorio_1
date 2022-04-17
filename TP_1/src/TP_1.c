@@ -88,6 +88,9 @@ int main(void) {
 				case 6:
 					printf("saliendo del programa!");
 					break;
+				default:
+					printf("Por favor ingrese una opcion valida\n");
+					break;
 			}
 	}while(opcion!=6);
 
