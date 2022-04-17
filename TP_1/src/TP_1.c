@@ -85,6 +85,9 @@ int main(void) {
 					flagPrecio=1;
 					flagKm=1;
 					break;
+				case 6:
+					printf("saliendo del programa!");
+					break;
 			}
 	}while(opcion!=6);
 
